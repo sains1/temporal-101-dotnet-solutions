@@ -4,11 +4,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "exercises", "exercises", "{
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "helloworkflow", "helloworkflow", "{625FF3D4-E8F0-4F57-AC73-292F43D819A1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorkflow.Worker", "exercises\helloworkflow\HelloWorkflow.Worker\HelloWorkflow.Worker.csproj", "{ECC96DC6-07D3-464B-B387-79E9E099D450}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorkflow.Worker", "exercises\solution\helloworkflow\HelloWorkflow.Worker\HelloWorkflow.Worker.csproj", "{ECC96DC6-07D3-464B-B387-79E9E099D450}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorkflow.Application", "exercises\helloworkflow\HelloWorkflow.Application\HelloWorkflow.Application.csproj", "{80448BCD-68EB-4C5E-B1B7-417074CF0B11}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorkflow.Application", "exercises\solution\helloworkflow\HelloWorkflow.Application\HelloWorkflow.Application.csproj", "{80448BCD-68EB-4C5E-B1B7-417074CF0B11}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorkflow.Client", "exercises\helloworkflow\HelloWorkflow.Client\HelloWorkflow.Client.csproj", "{3B0008FD-0D70-4451-9610-BDEAE7CFC565}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorkflow.Client", "exercises\solution\helloworkflow\HelloWorkflow.Client\HelloWorkflow.Client.csproj", "{3B0008FD-0D70-4451-9610-BDEAE7CFC565}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

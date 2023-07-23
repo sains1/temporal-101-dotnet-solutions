@@ -2,23 +2,31 @@
 
 ## Part A: Set up a new project
 
-🚧
+Before beginning, make sure you have the template project installed by following the instructions in the main README
 
-Template structure:
+Once done, create a new project using the template:
 
-- `HelloWorkflow.Application` - A .NET class library with our workflow business logic. The other two projects below reference this project.
-- `HelloWorkflow.Client` - A .NET console application.
-- `HelloWorkflow.Worker` - A .NET application with a single background service that runs our temporal worker.
+```command
+dotnet new temporal-minimal-solution -n HelloWorkflow -o ./exercises/helloworkflow/practice
+```
+
+This will create a hello-world template under the practice directory of the first exercise
+
+The template solution should look something like this:
+
+- `HelloWorkflow.Client` - A .NET console application that interacts with the temporal server to start a workflow.
+- `HelloWorkflow.Worker` - A .NET application with a background service that runs our temporal worker.
+- `HelloWorkflow.Application` - A .NET class library with our workflow business logic. The other two projects reference this project.
 
 ## Part B: Review the Workflow Business Logic
 
-- [HelloWorkflow.Application/Activities.cs](HelloWorkflow.Application/Activities.cs)
-- [HelloWorkflow.Application/Workflow.cs](HelloWorkflow.Application/Workflow.cs)
+- [HelloWorkflow.Application/Activities.cs](./practice/HelloWorkflow.Application/Activities.cs)
+- [HelloWorkflow.Application/Workflow.cs](./practice/HelloWorkflow.Application/Workflow.cs)
 
 ## Part C: Change the Task Queue Name for the Worker
 
-- [HelloWorkflow.Worker/Worker.cs](HelloWorkflow.Worker/Worker.cs)
-- [HelloWorkflow.Client/Program.cs](HelloWorkflow.Client/Program.cs)
+- [HelloWorkflow.Worker/Worker.cs](./practice/HelloWorkflow.Worker/Worker.cs)
+- [HelloWorkflow.Client/Program.cs](./practice/HelloWorkflow.Client/Program.cs)
 
 ## Part D: Start the Worker
 
@@ -27,7 +35,7 @@ Template structure:
 Either run the worker project direct from your IDE or use the .NET command below:
 
 ```command
-dotnet run --project ./exercises/helloworkflow/HelloWorkflow.Worker/HelloWorkflow.Worker.csproj
+dotnet run --project ./exercises/helloworkflow/practice/HelloWorkflow.Worker/HelloWorkflow.Worker.csproj
 ```
 
 After the build, you should see some output like below:
@@ -46,7 +54,7 @@ info: Microsoft.Hosting.Lifetime[0]
 > Note - run from a different terminal as we'll need the worker running in the background
 
 ```command
-dotnet run --project ./exercises/helloworkflow/HelloWorkflow.Client/HelloWorkflow.Client.csproj
+dotnet run --project ./exercises/helloworkflow/practice/HelloWorkflow.Client/HelloWorkflow.Client.csproj
 ```
 
 After the build, you should see some output like below:
