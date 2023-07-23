@@ -53,6 +53,21 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client", "exercises\hellowo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "exercises\helloworkflow\practice\Application\Application.csproj", "{8EEC7DFC-B570-41A1-BDD7-0973DB6709F3}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "hellowebui", "hellowebui", "{06FAB010-371B-4705-A36F-32D0AFE0D0C5}"
+	ProjectSection(SolutionItems) = preProject
+		exercises\hellowebui\README.md = exercises\hellowebui\README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "finaleworkflow", "finaleworkflow", "{80026C9E-3C94-4120-AD75-7DC47B6ABBA9}"
+	ProjectSection(SolutionItems) = preProject
+		exercises\finaleworkflow\README.md = exercises\finaleworkflow\README.md
+		exercises\finaleworkflow\java-activity-and-worker.jar = exercises\finaleworkflow\java-activity-and-worker.jar
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{313ABD19-DDC9-4DD9-9E98-D311CFF24C20}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client", "exercises\finaleworkflow\src\Client\Client.csproj", "{FB732469-C57A-4879-A7D8-F190ED06D0CB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -115,6 +130,10 @@ Global
 		{8EEC7DFC-B570-41A1-BDD7-0973DB6709F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8EEC7DFC-B570-41A1-BDD7-0973DB6709F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8EEC7DFC-B570-41A1-BDD7-0973DB6709F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB732469-C57A-4879-A7D8-F190ED06D0CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB732469-C57A-4879-A7D8-F190ED06D0CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB732469-C57A-4879-A7D8-F190ED06D0CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB732469-C57A-4879-A7D8-F190ED06D0CB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{625FF3D4-E8F0-4F57-AC73-292F43D819A1} = {15A87B7C-66B2-4837-A2F8-1CF878D90881}
@@ -137,5 +156,9 @@ Global
 		{367A67E5-159D-4CDA-825A-E35FA1DACEE7} = {317D093A-F635-4F8F-BD21-4237517B6203}
 		{EA421162-8855-4DFF-858F-2D00206933A3} = {317D093A-F635-4F8F-BD21-4237517B6203}
 		{8EEC7DFC-B570-41A1-BDD7-0973DB6709F3} = {317D093A-F635-4F8F-BD21-4237517B6203}
+		{06FAB010-371B-4705-A36F-32D0AFE0D0C5} = {15A87B7C-66B2-4837-A2F8-1CF878D90881}
+		{80026C9E-3C94-4120-AD75-7DC47B6ABBA9} = {15A87B7C-66B2-4837-A2F8-1CF878D90881}
+		{313ABD19-DDC9-4DD9-9E98-D311CFF24C20} = {80026C9E-3C94-4120-AD75-7DC47B6ABBA9}
+		{FB732469-C57A-4879-A7D8-F190ED06D0CB} = {313ABD19-DDC9-4DD9-9E98-D311CFF24C20}
 	EndGlobalSection
 EndGlobal
