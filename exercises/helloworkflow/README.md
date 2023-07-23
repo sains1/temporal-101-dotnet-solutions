@@ -87,7 +87,7 @@ temporal workflow show --workflow-id <your-workflow-id-from-previous-output>
 ```
 
 <details>
-      <summary>After the build, you should see some output like the collpased section below:</summary>
+      <summary>You should see some output like the collpased section below:</summary>
       
       ```
       Progress:
