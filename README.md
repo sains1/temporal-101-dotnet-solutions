@@ -46,6 +46,8 @@ dotnet new --list | grep Temporal
 temporal server start-dev
 ```
 
+> Note - when using the temporal CLI the server will be available at `localhost:7233` and the webUI at `http://localhost:8233/`
+
 ## Exercises
 
 1 - [Hello Workflow](exercises/helloworkflow/README.md)
