@@ -4,7 +4,7 @@
         <TargetFramework>net7.0</TargetFramework>
         <Nullable>enable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
-        <UserSecretsId>dotnet-TemporalDotnet.Worker-49BD11C8-638A-4019-8E52-E7ED6FE71E60</UserSecretsId>
+        <UserSecretsId>dotnet-.Worker-49BD11C8-638A-4019-8E52-E7ED6FE71E60</UserSecretsId>
     </PropertyGroup>
 
     <ItemGroup>
@@ -12,6 +12,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\TemporalDotnet.Application\TemporalDotnet.Application.csproj" />
+      <ProjectReference Include="..\Application\Application.csproj" />
     </ItemGroup>
 </Project>

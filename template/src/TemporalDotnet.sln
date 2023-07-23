@@ -1,9 +1,9 @@
 ﻿Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemporalDotnet.Application", "TemporalDotnet.Application\TemporalDotnet.Application.csproj", "{D1EF7B2F-E5D0-4670-82C8-26EF814FEE9E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "Application\Application.csproj", "{D1EF7B2F-E5D0-4670-82C8-26EF814FEE9E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemporalDotnet.Client", "TemporalDotnet.Client\TemporalDotnet.Client.csproj", "{0BE1C17B-18D8-4E44-9B49-C2668F3969F6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client", "Client\Client.csproj", "{0BE1C17B-18D8-4E44-9B49-C2668F3969F6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemporalDotnet.Worker", "TemporalDotnet.Worker\TemporalDotnet.Worker.csproj", "{0CBB3F58-C98E-46CB-B4E4-55B210D1338C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Worker", "Worker\Worker.csproj", "{0CBB3F58-C98E-46CB-B4E4-55B210D1338C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

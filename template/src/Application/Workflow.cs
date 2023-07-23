@@ -1,6 +1,6 @@
 using Temporalio.Workflows;
 
-namespace TemporalDotnet.Application;
+namespace Application;
 
 [Workflow]
 public class Workflow

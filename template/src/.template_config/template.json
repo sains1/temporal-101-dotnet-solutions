@@ -6,7 +6,7 @@
     "type": "solution",
     "language": "C#"
   },
-  "identity": "TemporalDotnet.Template",
+  "identity": ".Template",
   "name": "Temporal Dotnet Starter",
   "shortName": "temporal-dotnet-starter",
   "sourceName": "TemporalDotnet",

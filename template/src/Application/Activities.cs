@@ -1,6 +1,6 @@
 using Temporalio.Activities;
 
-namespace TemporalDotnet.Application;
+namespace Application;
 
 public static class Activities
 {
