@@ -7,7 +7,7 @@ Before beginning, make sure you have the template project installed by following
 Once done, create a new project using the template:
 
 ```command
-dotnet new temporal-minimal-solution -n HelloWorkflow -o ./exercises/helloworkflow/practice
+dotnet new temporal-dotnet-starter -n HelloWorkflow -o ./exercises/helloworkflow/practice
 ```
 
 This will create a hello-world template under the practice directory of the first exercise

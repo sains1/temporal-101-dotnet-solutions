@@ -18,8 +18,8 @@
   <PropertyGroup>
     <PackageType>Template</PackageType>
     <Version>0.1.0</Version>
-    <PackageId>TemporalMinSolution</PackageId>
-    <Title>Minimal Temporal Solution</Title>
+    <PackageId>TemporalDotnetStarter</PackageId>
+    <Title>Minimal Temporal Dotnet Starter</Title>
     <Company></Company>
     <Authors>sains1</Authors>
     <Copyright></Copyright>

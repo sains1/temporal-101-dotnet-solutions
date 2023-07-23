@@ -6,9 +6,9 @@
     "type": "solution",
     "language": "C#"
   },
-  "identity": "TemporalMinimal.Template",
-  "name": "Temporal Minimal Solution",
-  "shortName": "temporal-minimal-solution",
+  "identity": "TemporalDotnet.Template",
+  "name": "Temporal Dotnet Starter",
+  "shortName": "temporal-dotnet-starter",
   "sourceName": "TemporalDotnet",
   "symbols": {
     "solutionName": {
