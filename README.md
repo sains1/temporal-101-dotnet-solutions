@@ -1,8 +1,8 @@
 # \*Unofficial\* Temporal 101 dotnet code solutions
 
-This repo contains my \*unofficial\* code solutions when following the temporal 101 typescript course.
+This repo contains my unofficial .NET code solutions for the temporal 101 typescript course.
 
-At the time of writing no dotnet course exists (as its still in alpha). I've ported this course as a learning exercise, but to the best of my knowledge it's correct.
+At the time of writing no dotnet course exists (as its still in alpha) but I've ported this course as a learning exercise. To the best of my knowledge the solutions are correct.
 
 Typescript course link - https://learn.temporal.io/courses/temporal_101/typescript
 

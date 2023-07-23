@@ -26,7 +26,7 @@ Template structure:
 
 Either run the worker project direct from your IDE or use the .NET command below:
 
-```sh
+```command
 dotnet run --project ./exercises/helloworkflow/HelloWorkflow.Worker/HelloWorkflow.Worker.csproj
 ```
 
@@ -45,7 +45,7 @@ info: Microsoft.Hosting.Lifetime[0]
 
 > Note - run from a different terminal as we'll need the worker running in the background
 
-```sh
+```command
 dotnet run --project ./exercises/helloworkflow/HelloWorkflow.Client/HelloWorkflow.Client.csproj
 ```
 
@@ -60,8 +60,8 @@ Hello, Temporal!
 
 Make sure to substitue the workflow ID below for the one outputted in the previous step.
 
-```sh
-temporal workflow show --workflow-id <your-workflow-id-from-preview-output>
+```command
+temporal workflow show --workflow-id <your-workflow-id-from-previous-output>
 ```
 
 You should see some output like below:
