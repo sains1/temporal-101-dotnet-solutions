@@ -1,5 +1,7 @@
 # Exercise 2: Hello Web UI
 
+> Note: This readme was ported from the official typescript tutorial [hello-web-ui/README.md](https://github.com/temporalio/edu-101-typescript-code/blob/main/exercises/hello-web-ui/README.md).
+
 When using the temporal-cli, the WebUI will be available at `http://localhost:8233/`
 
 Tasks:

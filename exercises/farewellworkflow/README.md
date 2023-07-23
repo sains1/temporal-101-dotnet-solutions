@@ -1,5 +1,7 @@
 # Exercise 3: Farewell Workflow
 
+> Note: This readme was ported from the official typescript tutorial [farewell-workflow/README.md](https://github.com/temporalio/edu-101-typescript-code/blob/main/exercises/farewell-workflow/README.md).
+
 This exercise contains the following projects:
 
 - `Client` - A .NET console application that interacts with the temporal server to start a workflow.

@@ -1,5 +1,7 @@
 # Exercise 4: Finale Workflow
 
+> Note: This readme was ported from the official typescript tutorial [finale-workflow/README.md](https://github.com/temporalio/edu-101-typescript-code/blob/main/exercises/finale-workflow/README.md).
+
 This exercise demonstrates invoking workflows written in other languages.
 
 Our workflow and activity are written in Java. The implementation is able to use a Java graphics

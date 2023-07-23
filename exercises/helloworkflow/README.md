@@ -1,6 +1,8 @@
 # Exercise 1: Hello Workflow
 
-> Note: This exercise contains a notable difference to the typescript reference solution it was ported from. The typescript solution starts by scaffolding your own project using the CLI, but as I haven't created a templating solution I've just created a blank starter solution under the /practice folder.
+> Note: This readme was ported from the official typescript tutorial [hello-workflow/README.md](https://github.com/temporalio/edu-101-typescript-code/blob/main/exercises/hello-workflow/README.md).
+
+> Note: This exercise contains a notable difference to the typescript reference solution it was ported from. The typescript solution starts by scaffolding your own project using the CLI, but as I haven't created a templating solution I've just created a blank starter solution under the /practice folder instead.
 
 ## Part A: Set up a new project
 
@@ -9,11 +11,15 @@ The exercise is split into 2 top level folders
 `./solution` contains a complete reference solution for the exercise.
 `./practice` contains a partially complete solution for the exercise which we will modify.
 
+The practice folder should look something like:
+
+![hello workflow project structure](../../docs/helloworkflow/hello-workflow-project-structure.png)
+
 Our practice solution contains the following projets:
 
+- `Application` - A .NET class library where we'll add our workflow and activities.
 - `Client` - A .NET console application that interacts with the temporal server to start a workflow.
 - `Worker` - A .NET application with a background service that runs our temporal worker.
-- `Application` - A .NET class library with our workflow business logic. The other two projects reference this project.
 
 ## Part B: Review the Workflow Business Logic
 
