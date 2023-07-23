@@ -17,9 +17,9 @@ The practice folder should look something like:
 
 Our practice solution contains the following projets:
 
-- `Application` - A .NET class library where we'll add our workflow and activities.
-- `Client` - A .NET console application that interacts with the temporal server to start a workflow.
-- `Worker` - A .NET application with a background service that runs our temporal worker.
+- `Application` - A .NET class library where we'll add our Workflow and Activities.
+- `Client` - A .NET console application that interacts with the temporal server to start a Workflow.
+- `Worker` - A .NET application with a background service that runs our temporal Worker.
 
 ## Part B: Review the Workflow Business Logic
 
@@ -35,13 +35,13 @@ Our practice solution contains the following projets:
 
 > Note: Ensure your temporal server is running first, see instructions in root [README.md](../../README.md)
 
-Either run the worker project direct from your IDE or use the .NET command below:
+Either run the Worker project direct from your IDE or use the .NET command below:
 
 ```command
 dotnet run --project ./exercises/helloworkflow/practice/Worker/Worker.csproj
 ```
 
-The above command should yield the following output, indicating the worker is running
+The above command should yield the following output, indicating the Worker is running
 
 ```
 info: Microsoft.Hosting.Lifetime[0]
@@ -54,7 +54,7 @@ info: Microsoft.Hosting.Lifetime[0]
 
 ## Part E: Start the Client
 
-> Note - run from a different terminal as we'll need the worker running in the background
+> Note - run from a different terminal as we'll need the Worker running in the background
 
 ```command
 dotnet run --project ./exercises/helloworkflow/practice/Client/Client.csproj
@@ -69,7 +69,7 @@ Hello, Temporal!
 
 ## Part F (Optional): Display the Result from temporal-cli
 
-Run the command below to display the workflow execution result from the temporal-cli. Make sure to substitue the workflow ID below for the one outputted in the previous step.
+Run the command below to display the workflow execution result from the temporal-cli. Make sure to substitue the Workflow ID below for the one outputted in the previous step.
 
 ```command
 temporal workflow show --workflow-id <your-workflow-id-from-previous-output>
