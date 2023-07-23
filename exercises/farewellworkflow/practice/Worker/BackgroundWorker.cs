@@ -1,15 +1,15 @@
-using HelloWorkflow.Application;
+using Application;
 using Temporalio.Client;
 using Temporalio.Worker;
 
-namespace HelloWorkflow.Worker;
+namespace Worker;
 
-public class Worker : BackgroundService
+public class BackgroundWorker : BackgroundService
 {
     private readonly IServiceProvider _serviceProvider;
 
 
-    public Worker(IServiceProvider serviceProvider)
+    public BackgroundWorker(IServiceProvider serviceProvider)
     {
         _serviceProvider = serviceProvider;
     }
@@ -21,9 +21,11 @@ public class Worker : BackgroundService
             using var scope = _serviceProvider.CreateScope();
             var client = await scope.ServiceProvider.GetRequiredService<Task<TemporalClient>>();
 
+            // TODO register the farewell activity and workflow with the worker
+
             using var worker = new TemporalWorker(client,
-                new TemporalWorkerOptions { TaskQueue = "greeting-tasks"}
-                    .AddActivity(Activities.Greet)
+                new TemporalWorkerOptions { TaskQueue = "translation-tasks"}
+                    .AddActivity(Activities.GetSpanishGreeting)
                     .AddWorkflow<GreetingWorkflow>());
 
             await worker.ExecuteAsync(stoppingToken);

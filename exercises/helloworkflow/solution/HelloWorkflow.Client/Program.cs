@@ -8,7 +8,7 @@ var client = await TemporalClient.ConnectAsync(new()
     // In production, pass options to configure TLS and other settings
 });
 
-var handle = await client.StartWorkflowAsync((Workflow x) => x.RunAsync("Temporal"), new WorkflowOptions
+var handle = await client.StartWorkflowAsync((GreetingWorkflow x) => x.RunAsync("Temporal"), new WorkflowOptions
 {
     TaskQueue = "greeting-tasks",
     // in practice, use a meaningful business id, eg customerId or transactionId
