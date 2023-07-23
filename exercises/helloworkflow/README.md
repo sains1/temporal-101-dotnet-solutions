@@ -67,9 +67,9 @@ Started workflow workflow-a9c73146-c296-4673-a99b-3d112677c831
 Hello, Temporal!
 ```
 
-## Part F (Optional): Display the Result
+## Part F (Optional): Display the Result from temporal-cli
 
-Make sure to substitue the workflow ID below for the one outputted in the previous step.
+Run the command below to display the workflow execution result from the temporal-cli. Make sure to substitue the workflow ID below for the one outputted in the previous step.
 
 ```command
 temporal workflow show --workflow-id <your-workflow-id-from-previous-output>
