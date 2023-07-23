@@ -1,15 +1,15 @@
-using HelloWorkflow.Application;
+using Application;
 using Temporalio.Client;
 using Temporalio.Worker;
 
-namespace HelloWorkflow.Worker;
+namespace Worker;
 
-public class Worker : BackgroundService
+public class BackgroundWorker : BackgroundService
 {
     private readonly IServiceProvider _serviceProvider;
 
 
-    public Worker(IServiceProvider serviceProvider)
+    public BackgroundWorker(IServiceProvider serviceProvider)
     {
         _serviceProvider = serviceProvider;
     }
@@ -22,9 +22,9 @@ public class Worker : BackgroundService
             var client = await scope.ServiceProvider.GetRequiredService<Task<TemporalClient>>();
 
             using var worker = new TemporalWorker(client,
-                new TemporalWorkerOptions { TaskQueue = "greeting-tasks"}
+                new TemporalWorkerOptions { TaskQueue = "hello-world" }
                     .AddActivity(Activities.Greet)
-                    .AddWorkflow<GreetingWorkflow>());
+                    .AddWorkflow<Workflow>());
 
             await worker.ExecuteAsync(stoppingToken);
         }

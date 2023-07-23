@@ -4,7 +4,7 @@
         <TargetFramework>net7.0</TargetFramework>
         <Nullable>enable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
-        <UserSecretsId>dotnet-HelloWorkflow.Worker-FB5809F9-D57C-4C67-8FA6-6A0B089A84E0</UserSecretsId>
+        <UserSecretsId>dotnet-.Worker-49BD11C8-638A-4019-8E52-E7ED6FE71E60</UserSecretsId>
     </PropertyGroup>
 
     <ItemGroup>
@@ -12,6 +12,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\HelloWorkflow.Application\HelloWorkflow.Application.csproj" />
+      <ProjectReference Include="..\Application\Application.csproj" />
     </ItemGroup>
 </Project>

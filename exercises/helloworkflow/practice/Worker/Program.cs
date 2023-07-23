@@ -1,16 +1,16 @@
-using HelloWorkflow.Worker;
+using Worker;
 using Temporalio.Client;
 
 IHost host = Host.CreateDefaultBuilder(args)
     .ConfigureServices(services =>
     {
-        services.AddHostedService<Worker>();
+        services.AddHostedService<BackgroundWorker>();
         services.AddSingleton(ctx =>
             TemporalClient.ConnectAsync(new()
             {
-                TargetHost = "localhost:7233", LoggerFactory = ctx.GetRequiredService<ILoggerFactory>(),
+                TargetHost = "localhost:7233",
+                LoggerFactory = ctx.GetRequiredService<ILoggerFactory>(),
             }));
-
     })
     .Build();
 

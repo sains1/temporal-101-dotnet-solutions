@@ -1,6 +1,6 @@
 ﻿{
   "profiles": {
-    "HelloWorkflow.Worker": {
+    ".Worker": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "environmentVariables": {

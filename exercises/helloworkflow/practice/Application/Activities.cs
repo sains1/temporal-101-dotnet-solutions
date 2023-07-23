@@ -1,6 +1,6 @@
 using Temporalio.Activities;
 
-namespace HelloWorkflow.Application;
+namespace Application;
 
 public static class Activities
 {
