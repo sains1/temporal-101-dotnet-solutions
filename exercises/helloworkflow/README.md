@@ -18,15 +18,21 @@ The template solution should look something like this:
 - `HelloWorkflow.Worker` - A .NET application with a background service that runs our temporal worker.
 - `HelloWorkflow.Application` - A .NET class library with our workflow business logic. The other two projects reference this project.
 
+<br />
+
 ## Part B: Review the Workflow Business Logic
 
 - [HelloWorkflow.Application/Activities.cs](./practice/HelloWorkflow.Application/Activities.cs)
 - [HelloWorkflow.Application/Workflow.cs](./practice/HelloWorkflow.Application/Workflow.cs)
 
+<br />
+
 ## Part C: Change the Task Queue Name for the Worker
 
 - [HelloWorkflow.Worker/Worker.cs](./practice/HelloWorkflow.Worker/Worker.cs)
 - [HelloWorkflow.Client/Program.cs](./practice/HelloWorkflow.Client/Program.cs)
+
+<br />
 
 ## Part D: Start the Worker
 
@@ -38,16 +44,20 @@ Either run the worker project direct from your IDE or use the .NET command below
 dotnet run --project ./exercises/helloworkflow/practice/HelloWorkflow.Worker/HelloWorkflow.Worker.csproj
 ```
 
-After the build, you should see some output like below:
+<details>
+      <summary>After the build, you should see some output like the collpased section below:</summary>
+      
+      ```
+      info: Microsoft.Hosting.Lifetime[0]
+            Application started. Press Ctrl+C to shut down.
+      info: Microsoft.Hosting.Lifetime[0]
+            Hosting environment: Development
+      info: Microsoft.Hosting.Lifetime[0]
+            Content root path: /temporal_dotnet_101/exercises/helloworkflow/HelloWorkflow.Worker
+      ```
+</details>
 
-```
-info: Microsoft.Hosting.Lifetime[0]
-      Application started. Press Ctrl+C to shut down.
-info: Microsoft.Hosting.Lifetime[0]
-      Hosting environment: Development
-info: Microsoft.Hosting.Lifetime[0]
-      Content root path: /temporal_dotnet_101/exercises/helloworkflow/HelloWorkflow.Worker
-```
+<br />
 
 ## Part E: Start the Client
 
@@ -57,12 +67,16 @@ info: Microsoft.Hosting.Lifetime[0]
 dotnet run --project ./exercises/helloworkflow/practice/HelloWorkflow.Client/HelloWorkflow.Client.csproj
 ```
 
-After the build, you should see some output like below:
+<details>
+      <summary>After the build, you should see some output like the collpased section below:</summary>
+      
+      ```
+      Started workflow workflow-a9c73146-c296-4673-a99b-3d112677c831
+      Hello, Temporal!
+      ```
+</details>
 
-```
-Started workflow workflow-a9c73146-c296-4673-a99b-3d112677c831
-Hello, Temporal!
-```
+<br />
 
 ## Part F (Optional): Display the Result
 
@@ -72,24 +86,26 @@ Make sure to substitue the workflow ID below for the one outputted in the previo
 temporal workflow show --workflow-id <your-workflow-id-from-previous-output>
 ```
 
-You should see some output like below:
-
-```
-Progress:
-  ID          Time                     Type
-   1  2023-07-22T18:57:06Z  WorkflowExecutionStarted
-   2  2023-07-22T18:57:06Z  WorkflowTaskScheduled
-   3  2023-07-22T18:57:06Z  WorkflowTaskStarted
-   4  2023-07-22T18:57:07Z  WorkflowTaskCompleted
-   5  2023-07-22T18:57:07Z  ActivityTaskScheduled
-   6  2023-07-22T18:57:07Z  ActivityTaskStarted
-   7  2023-07-22T18:57:07Z  ActivityTaskCompleted
-   8  2023-07-22T18:57:07Z  WorkflowTaskScheduled
-   9  2023-07-22T18:57:07Z  WorkflowTaskStarted
-  10  2023-07-22T18:57:07Z  WorkflowTaskCompleted
-  11  2023-07-22T18:57:07Z  WorkflowExecutionCompleted
-
-Result:
-  Status: COMPLETED
-  Output: ["Hello, Temporal!"]
-```
+<details>
+      <summary>After the build, you should see some output like the collpased section below:</summary>
+      
+      ```
+      Progress:
+        ID          Time                     Type
+         1  2023-07-22T18:57:06Z  WorkflowExecutionStarted
+         2  2023-07-22T18:57:06Z  WorkflowTaskScheduled
+         3  2023-07-22T18:57:06Z  WorkflowTaskStarted
+         4  2023-07-22T18:57:07Z  WorkflowTaskCompleted
+         5  2023-07-22T18:57:07Z  ActivityTaskScheduled
+         6  2023-07-22T18:57:07Z  ActivityTaskStarted
+         7  2023-07-22T18:57:07Z  ActivityTaskCompleted
+         8  2023-07-22T18:57:07Z  WorkflowTaskScheduled
+         9  2023-07-22T18:57:07Z  WorkflowTaskStarted
+        10  2023-07-22T18:57:07Z  WorkflowTaskCompleted
+        11  2023-07-22T18:57:07Z  WorkflowExecutionCompleted
+      
+      Result:
+        Status: COMPLETED
+        Output: ["Hello, Temporal!"]
+      ```
+</details>
