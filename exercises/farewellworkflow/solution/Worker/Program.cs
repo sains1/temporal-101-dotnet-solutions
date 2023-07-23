@@ -1,5 +1,5 @@
-using Worker;
 using Temporalio.Client;
+using Worker;
 
 IHost host = Host.CreateDefaultBuilder(args)
     .ConfigureServices(services =>

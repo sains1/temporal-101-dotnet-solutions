@@ -4,7 +4,7 @@ namespace Application;
 
 public static class Activities
 {
-    private static HttpClient _client = new();
+    private static readonly HttpClient _client = new();
 
     [Activity]
     public static async Task<string> GetSpanishGreeting(string name)

@@ -1,4 +1,4 @@
-﻿using Application;
+using Application;
 using Temporalio.Client;
 
 // Connect to the default Server location (localhost:7233)

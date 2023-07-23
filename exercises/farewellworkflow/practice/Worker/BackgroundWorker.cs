@@ -8,7 +8,6 @@ public class BackgroundWorker : BackgroundService
 {
     private readonly IServiceProvider _serviceProvider;
 
-
     public BackgroundWorker(IServiceProvider serviceProvider)
     {
         _serviceProvider = serviceProvider;
@@ -24,7 +23,7 @@ public class BackgroundWorker : BackgroundService
             // TODO register the farewell activity and workflow with the worker
 
             using var worker = new TemporalWorker(client,
-                new TemporalWorkerOptions { TaskQueue = "translation-tasks"}
+                new TemporalWorkerOptions { TaskQueue = "translation-tasks" }
                     .AddActivity(Activities.GetSpanishGreeting)
                     .AddWorkflow<GreetingWorkflow>());
 

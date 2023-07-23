@@ -8,7 +8,6 @@ public class BackgroundWorker : BackgroundService
 {
     private readonly IServiceProvider _serviceProvider;
 
-
     public BackgroundWorker(IServiceProvider serviceProvider)
     {
         _serviceProvider = serviceProvider;

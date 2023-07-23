@@ -1,4 +1,4 @@
-﻿using Application;
+using Application;
 using Temporalio.Client;
 
 // Connect to the default Server location (localhost:7233)
@@ -7,7 +7,6 @@ var client = await TemporalClient.ConnectAsync(new()
     TargetHost = "localhost:7233",
     // In production, pass options to configure TLS and other settings
 });
-
 
 switch (args[0])
 {
