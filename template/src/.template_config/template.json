@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "sains1",
+  "classifications": ["ASP.NET Core", "Core", "Template"],
+  "tags": {
+    "type": "solution",
+    "language": "C#"
+  },
+  "identity": "TemporalMinimal.Template",
+  "name": "Temporal Minimal Solution",
+  "shortName": "temporal-minimal-solution",
+  "sourceName": "TemporalDotnet",
+  "symbols": {
+    "solutionName": {
+      "type": "parameter",
+      "description": "Name to use for the solution",
+      "defaultValue": "{SOLUTION_NAME}",
+      "replaces": "{SOLUTION_NAME}"
+    }
+  },
+  "sources": [
+    {
+      "modifiers": [
+        {
+          "exclude": ["src/.idea/**", ".template_config/**"]
+        }
+      ]
+    }
+  ]
+}
