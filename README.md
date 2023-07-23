@@ -19,8 +19,11 @@ Typescript course link - https://learn.temporal.io/courses/temporal_101/typescri
 ## Exercises
 
 1 - [Hello Workflow](exercises/helloworkflow/README.md)
+
 2 - [Hello Web UI](exercises/hellowebui/README.md)
+
 3 - [Farewell Workflow](exercises/farewellworkflow/README.md)
+
 4 - [Finale Workflow](exercises/finaleworkflow/README.md)
 
 ## Repo structure
@@ -32,7 +35,7 @@ Typescript course link - https://learn.temporal.io/courses/temporal_101/typescri
 
 ## Running the temporal-server
 
-You'll need a temporal server implementation running for each of the exercises. The easiest way to do this is to use the temporal CLI and run the below to start a dev server.
+You'll need a temporal server implementation running for each of the exercises. The easiest way to do this is to use the temporal CLI. Run the below to start a dev server:
 
 ```sh
 temporal server start-dev
