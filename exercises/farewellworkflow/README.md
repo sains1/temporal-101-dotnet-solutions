@@ -34,7 +34,7 @@ curl "http://localhost:9999/get-spanish-farewell?name=tina"
 Next, run the Worker:
 
 ```sh
-dotnet watch --project ./exercises/farewellworkflow/practice/Worker/Worker.csproj
+dotnet watch --no-hot-reload --project ./exercises/farewellworkflow/practice/Worker/Worker.csproj
 ```
 
 > Note: using the watch command above will automatically restart the Worker when you make changes to the code.
@@ -59,19 +59,21 @@ dotnet run --project ./exercises/farewellworkflow/practice/Client/Client.csproj 
 
 - Open [Activities.cs](./practice/Application/Activities.cs) and write an Activity GetSpanishFarewell that calls our API endpoint `/get-spanish-farewell?name={name}`. The Activity should return a string.
 
-- Open [BackgroundWorker.cs](./practice/Worker/BackgroundWorker.cs) and register the Activity with the Worker.
+- If the activity was added to the same static class as our greeting Activity then it will be automatically registered with the worker, otherwise if its on a seperate class be sure to register it in [Worker/Program.cs](./practice/Worker/Program.cs).
 
 ## Part C: Write the Workflow
 
 - Open [Workflow.cs](./practice/Application/Workflow.cs) and write a Workflow that calls the Activity you wrote in the previous step. The Workflow should return a string.
 
-- Open [BackgroundWorker.cs](./practice/Worker/BackgroundWorker.cs) and register the Workflow with the Worker.
+- Open [Worker/Program.cs](./practice/Worker/Program.cs) and register the Workflow with the Worker.
+
+> Note - the Worker should have automatically restarted when you register the Workflow, but if for some reason it doesn't just restart it manually.
 
 ## Part D: Modify the client to invoke the FarewellWorkflow
 
-- Open [Program.cs](./practice/Client/Program.cs) and modify the application to call the FarewellWorkflow when the farewell argument is passed.
+- Open [Client/Program.cs](./practice/Client/Program.cs) and modify the application to call the FarewellWorkflow when the farewell argument is passed.
 
-## Part E: Run the FarewellWorkflow
+## Part E: Invoke the FarewellWorkflow
 
 - Run the client with the farewell argument:
 

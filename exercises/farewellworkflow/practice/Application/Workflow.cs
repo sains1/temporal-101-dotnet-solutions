@@ -15,7 +15,7 @@ public class GreetingWorkflow
 }
 
 // TODO write a farewell workflow that returns the response from the farewell activity
-// TODO remember to add the workflow and activity to the Worker and Client applications
+// TODO remember to add the workflow to the Worker and Client applications
 
 /*
  * [Workflow]

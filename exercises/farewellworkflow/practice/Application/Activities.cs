@@ -13,6 +13,6 @@ public static class Activities
         return await response.Content.ReadAsStringAsync();
     }
 
-    // TODO write a farewell activity that returns a farewell message.
+    // TODO write a GetSpanishFarewell Activity that returns a farewell message.
     // -> It will be identical to the greet activity except the path will be /get-spanish-farewell
 }

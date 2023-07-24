@@ -28,7 +28,7 @@ Our practice solution contains the following projets:
 
 ## Part C: Change the Task Queue Name for the Worker
 
-- [Worker/Worker.cs](./practice/Worker/Worker.cs)
+- [Worker/Program.cs](./practice/Worker/Program.cs)
 - [Client/Program.cs](./practice/Client/Program.cs)
 
 ## Part D: Start the Worker
