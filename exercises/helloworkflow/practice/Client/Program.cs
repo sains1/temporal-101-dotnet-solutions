@@ -12,10 +12,10 @@ var handle = await client.StartWorkflowAsync((Workflow x) => x.RunAsync("Tempora
 {
     TaskQueue = "hello-world",
     // in practice, use a meaningful business id, eg customerId or transactionId
-    ID = "workflow-" + Guid.NewGuid()
+    Id = "workflow-" + Guid.NewGuid()
 });
 
-Console.WriteLine("Started workflow {0}", handle.ID); // Started workflow workflow-84382273-5863-468c-bd81-08cd12f29057
+Console.WriteLine("Started workflow {0}", handle.Id); // Started workflow workflow-84382273-5863-468c-bd81-08cd12f29057
 
 // optional: wait for client result
 Console.WriteLine(await handle.GetResultAsync()); // Hello, Temporal!

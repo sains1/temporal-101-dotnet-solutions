@@ -27,9 +27,9 @@ async Task Greeting()
     {
         TaskQueue = "translation-tasks",
         // in practice, use a meaningful business id, eg customerId or transactionId
-        ID = "workflow-" + Guid.NewGuid()
+        Id = "workflow-" + Guid.NewGuid()
     });
-    Console.WriteLine("Started workflow {0}", handle.ID);
+    Console.WriteLine("Started workflow {0}", handle.Id);
 
     // optional: wait for client result
     Console.WriteLine(await handle.GetResultAsync());

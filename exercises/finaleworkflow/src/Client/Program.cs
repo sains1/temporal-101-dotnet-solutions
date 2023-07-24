@@ -10,8 +10,9 @@ var client = await TemporalClient.ConnectAsync(new()
 var handle = await client.StartWorkflowAsync((ICertificateGeneratorWorkflow x) => x.RunAsync("Maxim Fateev"),
     new WorkflowOptions
     {
-        TaskQueue = "generate-certificate-taskqueue", ID = "cert-generator-workflow-" + Guid.NewGuid()
+        TaskQueue = "generate-certificate-taskqueue",
+        Id = "cert-generator-workflow-" + Guid.NewGuid()
     });
 
-Console.WriteLine("Started workflow {0}", handle.ID);
+Console.WriteLine("Started workflow {0}", handle.Id);
 Console.WriteLine("You can find your certificate of completion here: " + await handle.GetResultAsync());
